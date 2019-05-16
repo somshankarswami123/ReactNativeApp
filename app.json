@@ -1,0 +1,64 @@
+//{
+//  "expo": {
+//    "name": "ReactNativeApp",
+//    "slug": "DemoApp",
+//    "privacy": "public",
+//    "sdkVersion": "32.0.0",
+//    "platforms": [
+//      "ios",
+//      "android"
+//    ],
+//    "version": "1.0.0",
+//    "orientation": "portrait",
+//    "icon": "./assets/images/icon.png",
+//    "splash": {
+//      "image": "./assets/images/splash.png",
+//      "resizeMode": "contain",
+//      "backgroundColor": "#ffffff"
+//    },
+//    "updates": {
+//      "fallbackToCacheTimeout": 0
+//    },
+//    "assetBundlePatterns": [
+//      "**/*"
+//    ],
+//    "ios": {
+//      "supportsTablet": true
+//    }
+//  }
+//}
+
+{
+  "expo": {
+    "name": "ReactNativeApp",
+    "icon": "./assets/images/icon.png",
+    "version": "1.0.0",
+    "slug": "DemoApp",
+    "privacy": "public",
+    "platforms": [
+      "ios",
+      "android"
+    ],
+    "sdkVersion": "32.0.0",
+    "ios": {
+      "bundleIdentifier": "com.techprimelab.knorrbreams",
+      "supportsTablet": true
+    },
+    "android": {
+      "package": "com.techprimelab.knorrbreams"
+    },
+    "orientation": "portrait",
+    "splash": {
+      "image": "./assets/images/knorrlogo.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#1A237E"
+    },
+    "updates": {
+      "fallbackToCacheTimeout": 0
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  }
+}
+
