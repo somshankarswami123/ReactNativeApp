@@ -11,7 +11,7 @@ const styles = StyleSheet.create({
         flex: 1,
         flexDirection: 'row',
         alignItems: 'center',
-        justifyContent: 'center',
+        justifyContent: 'center'
     },
     input: {
         width: 200,
@@ -106,12 +106,19 @@ const styles = StyleSheet.create({
         fontSize: 14,
         color: '#2e78b7',
     },
+    image: {
+        flexDirection: 'column',
+        alignItems:'center',
+        justifyContent: 'center',
+    }
 });
 
 export default class Login extends React.Component {
     render() {
         return (
             <View style={styles.container}>
+                <Image
+                    source={require('../../assets/images/knorrlogo.png')} style={styles.image}  />
                 <View>
                     <TextInput
                         placeholder="Phone Number"
@@ -124,12 +131,13 @@ export default class Login extends React.Component {
                             marginRight: 44,
                             borderRadius: 30
                             }}
+
                     />
                 </View>
                 <View>
                     <TextInput
                         secureTextEntry={true}
-                        placeholder="Phone Number"
+                        placeholder="Password"
                         style={{
                         height: 42,
                         borderColor: 'gray',
@@ -143,7 +151,7 @@ export default class Login extends React.Component {
                     />
                 </View>
                 <View style={styles.container1}>
-                    <CheckBox title='Click Here' checked="true"/><Text>Remember ME</Text>
+                    <CheckBox title='Click Here' checked="true"/><Text>Remember me</Text>
                     <Text style={{color: 'blue'}}>
                         Forgot Password?
                     </Text>
