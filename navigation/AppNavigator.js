@@ -3,6 +3,7 @@ import { createAppContainer, createSwitchNavigator } from 'react-navigation';
 
 import MainTabNavigator from './MainTabNavigator';
 import Login from "../components/Login/Login";
+import ListView from "../components/List-View/listview";
 
 
 export default createAppContainer(createSwitchNavigator({
@@ -10,5 +11,6 @@ export default createAppContainer(createSwitchNavigator({
   // Read more at https://reactnavigation.org/docs/en/auth-flow.html
   Main: Login,
   Register: Login,
-  Home: MainTabNavigator
+  Home: MainTabNavigator,
+  ListView: ListView
 }));

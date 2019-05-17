@@ -1,5 +1,5 @@
 import React from 'react';
-import {Platform, StyleSheet, Text, View} from 'react-native';
+import {Platform, StyleSheet, Text, View,TouchableOpacity} from 'react-native';
 import {Card} from "react-native-elements";
 import { createStackNavigator } from "react-navigation";
 import { YellowBox } from "react-native";
@@ -15,16 +15,19 @@ export default class HomeScreen extends React.Component {
     }
   };
 
+
   render() {
     return (
         <View>
         <View style={styles.cards}>
+          <TouchableOpacity onPress={() => this.props.navigation.navigate('ListView')}>
           <Card
               image={require('../assets/images/air-compressor.jpg')}>
             <Text style={{marginBottom: 10}}>
               Air Compressor
             </Text>
           </Card>
+          </TouchableOpacity>
           <Card
               image={require('../assets/images/air-compressor.jpg')}>
             <Text style={{marginBottom: 10}}>
